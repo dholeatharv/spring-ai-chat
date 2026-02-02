@@ -38,7 +38,6 @@ This project focuses on **usable, recruiter-facing insights**, not AI hype.
 - React
 - Vite
 - Tailwind CSS
-- Modern recruiter-friendly UI
 
 ---
 
