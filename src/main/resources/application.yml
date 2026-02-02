@@ -1,16 +1,23 @@
+
 server:
   port: 8080
 
 spring:
   ai:
-   openai:
-     api-key: ${OPEN_ai_KEY}
-     model: gpt-4o-mini
-   autoconfigure:
-    exclude:
-      - org.springframework.ai.model.openai.autoconfigure.OpenAiAudioSpeechAutoConfiguration
+    openai:
+      api-key: ${OPEN_KEY}
+      model: gpt-4o-mini
+    autoconfigure:
+      exclude:
+        - org.springframework.ai.model.openai.autoconfigure.OpenAiAudioSpeechAutoConfiguration
 
+  servlet:
+    multipart:
+      max-file-size: 5MB
+      max-request-size: 5MB
 
 springdoc:
   swagger-ui:
     path: /swagger
+
+
